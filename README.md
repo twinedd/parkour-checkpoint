@@ -1,5 +1,24 @@
 # Parkour Checkpoint
 
+## English
+
+Parkour Checkpoint is a client-side Fabric mod for Minecraft Java 1.21.11. Practice a jump with a local ghost on blocks already loaded from the server, then replay the recorded movement with your real player.
+
+| Key | Command | Action |
+| --- | --- | --- |
+| F4 | `/pcheckpoint start` | Save the current position and start practicing; press again to cancel. |
+| F6 | `/pcheckpoint reset` | Return the ghost to the saved position and clear the recording. |
+| F7 | `/pcheckpoint apply` | Replay the recording on the server. |
+| F8 | `/pcheckpoint cancel` | Stop practice or playback. |
+
+Your real player remains on the server during practice. Before playback, the mod checks that its position and velocity still match the checkpoint; playback stops if the path diverges significantly. Results depend on network latency, server physics, and anti-cheat. Check the server's rules before using automated playback. Each practice attempt is limited to 10 minutes.
+
+Download the jar from [Releases](../../releases), place it and Fabric API in your `mods` folder, and remove older versions of this mod. To build from source, use JDK 21 and run `gradlew.bat build` on Windows or `./gradlew build` elsewhere.
+
+This project is based on [Parkour Practice by TheVoidBlock](https://github.com/TheVoidBlock/ParkourPractice). The modified source is distributed under GPL-3.0-or-later; see [LICENSE.txt](LICENSE.txt).
+
+## Русский
+
 Клиентский Fabric-мод для Minecraft Java 1.21.11. Позволяет тренировать прыжок локальным «призраком» на блоках, которые уже загружены с сервера, а затем воспроизвести записанные движения своим персонажем.
 
 | Клавиша | Команда | Действие |
