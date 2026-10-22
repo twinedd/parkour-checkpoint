@@ -1,0 +1,10 @@
+{
+  "text.parkourcheckpoint.ghost-player": "Parkour practice",
+  "text.parkourcheckpoint.on": "ON",
+  "text.parkourcheckpoint.off": "OFF",
+  "key.category.parkourcheckpoint.main": "Parkour Checkpoint",
+  "key.parkourcheckpoint.activate": "Start/cancel practice",
+  "key.parkourcheckpoint.reset": "Reset attempt",
+  "key.parkourcheckpoint.apply": "Replay attempt on server",
+  "key.parkourcheckpoint.abort": "Abort practice or replay"
+}
