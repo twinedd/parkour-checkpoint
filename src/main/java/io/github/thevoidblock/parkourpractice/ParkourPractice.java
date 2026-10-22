@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ParkourPractice implements ClientModInitializer {
-    public static final String MOD_ID = "parkourcheckpoint";
+    public static final String MOD_ID = "parkourhelper";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static FakePlayerEntity GHOST_PLAYER;
@@ -57,11 +57,11 @@ public class ParkourPractice implements ClientModInitializer {
     protected static void sendToggleNotification(MinecraftClient client, String module, boolean value) {
         if (client.player == null) return;
         client.player.sendMessage(
-                Text.translatable("text.parkourcheckpoint." + module)
+                Text.translatable("text.parkourhelper." + module)
                         .append(" ")
                         .append((value ?
-                                Text.translatable("text.parkourcheckpoint.on") :
-                                Text.translatable("text.parkourcheckpoint.off"))
+                                Text.translatable("text.parkourhelper.on") :
+                                Text.translatable("text.parkourhelper.off"))
                                 .formatted(value ? Formatting.GREEN : Formatting.RED)),
                 true
         );
@@ -186,6 +186,6 @@ public class ParkourPractice implements ClientModInitializer {
     }
 
     private static void message(MinecraftClient client, String value) {
-        if (client.player != null) client.player.sendMessage(Text.literal("[Parkour Checkpoint] " + value), false);
+        if (client.player != null) client.player.sendMessage(Text.literal("[Parkour Helper] " + value), false);
     }
 }

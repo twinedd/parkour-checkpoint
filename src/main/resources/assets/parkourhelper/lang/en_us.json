@@ -1,0 +1,10 @@
+{
+  "text.parkourhelper.ghost-player": "Parkour practice",
+  "text.parkourhelper.on": "ON",
+  "text.parkourhelper.off": "OFF",
+  "key.category.parkourhelper.main": "Parkour Helper",
+  "key.parkourhelper.activate": "Start/cancel practice",
+  "key.parkourhelper.reset": "Reset attempt",
+  "key.parkourhelper.apply": "Replay attempt on server",
+  "key.parkourhelper.abort": "Abort practice or replay"
+}

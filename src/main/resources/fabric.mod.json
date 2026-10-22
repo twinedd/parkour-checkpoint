@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "parkourcheckpoint",
+  "id": "parkourhelper",
   "version": "${version}",
-  "name": "Parkour Checkpoint",
+  "name": "Parkour Helper",
   "description": "Practice parkour with a local ghost and replay recorded movement on the connected server.",
-  "authors": [ "TheVoidBlock (original Parkour Practice)", "Parkour Checkpoint contributors" ],
+  "authors": [ "TheVoidBlock (original Parkour Practice)", "twinedd" ],
   "contact": {
-    "homepage": "https://github.com/TheVoidBlock/ParkourPractice"
+    "homepage": "https://github.com/twinedd/parkour-helper"
   },
   "license": "GPL-3.0-or-later",
-  "icon": "assets/parkourcheckpoint/icon.png",
+  "icon": "assets/parkourhelper/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
@@ -17,7 +17,7 @@
     ]
   },
   "mixins": [
-    "parkourpractice.mixins.json"
+    "parkourhelper.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

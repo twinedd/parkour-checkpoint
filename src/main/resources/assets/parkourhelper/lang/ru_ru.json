@@ -1,0 +1,10 @@
+{
+  "text.parkourhelper.ghost-player": "Тренировка паркура",
+  "text.parkourhelper.on": "ВКЛ",
+  "text.parkourhelper.off": "ВЫКЛ",
+  "key.category.parkourhelper.main": "Parkour Helper",
+  "key.parkourhelper.activate": "Начать/отменить тренировку",
+  "key.parkourhelper.reset": "Сбросить попытку",
+  "key.parkourhelper.apply": "Повторить попытку на сервере",
+  "key.parkourhelper.abort": "Прервать тренировку или повтор"
+}

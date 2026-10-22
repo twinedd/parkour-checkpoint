@@ -9,12 +9,14 @@ final class PracticeCommands {
     private PracticeCommands() {}
 
     static void register() {
-        ClientCommandRegistrationCallback.EVENT.register((dispatcher, context) ->
-                dispatcher.register(literal("pcheckpoint")
+        ClientCommandRegistrationCallback.EVENT.register((dispatcher, context) -> {
+                var command = dispatcher.register(literal("parkourhelper")
                         .then(literal("start").executes(source -> run(ParkourPractice::enable)))
                         .then(literal("reset").executes(source -> run(ParkourPractice::reset)))
                         .then(literal("apply").executes(source -> run(ParkourPractice::apply)))
-                        .then(literal("cancel").executes(source -> run(ParkourPractice::stop)))));
+                        .then(literal("cancel").executes(source -> run(ParkourPractice::stop))));
+                dispatcher.register(literal("pcheckpoint").redirect(command));
+        });
     }
 
     private static int run(java.util.function.Consumer<MinecraftClient> action) {

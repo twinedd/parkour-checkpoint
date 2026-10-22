@@ -36,6 +36,6 @@ public class KeyBindings {
     }
 
     private static KeyBinding registerKeybind(String name, int key) {
-        return KeyBindingHelper.registerKeyBinding(new KeyBinding("key.parkourcheckpoint." + name, key, CATEGORY));
+        return KeyBindingHelper.registerKeyBinding(new KeyBinding("key.parkourhelper." + name, key, CATEGORY));
     }
 }
